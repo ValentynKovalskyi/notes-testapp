@@ -7,7 +7,6 @@ notesRouter.get('/', async (req, res, next) => {
    try {
     const notes = await getAllNotes()
     res.status(200).send({ notes })
-     console.log('123')
   } catch (e) {
      res.status(500).send(e)
    }
